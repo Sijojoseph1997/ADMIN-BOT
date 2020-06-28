@@ -20,10 +20,12 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 hiii 🙋🏻 {}, my name is {}!
 
-im a [group](https://t.me/fcfilmcorner) manager bot maintained by  [this person](tg://user?id={}).
+im a [group](https://t.me/VAKERMEDIA) manager bot maintained by  [this person](tg://user?id={}).
 
-My future updates will be put into This Channel - @fcfilmcornerbotupdates and you just follow my channel @fcfilmcorner
-
+My future updates will be put into This Channel - @fcfilmcornerbotupdates and you just follow my group for movies @VAKERMEDIA
+@VAKERMEDIA_ALL , @VAKERMEDIA_THRILLER
+private link:-
+https://t.me/joinchat/JlHDh1c8uoAznYSS3ae5NA
 This is my [Deploy Code](https://github.com/jinto4638/FC-ADMIN-BOT),
 you can create clone same like me..
 
@@ -34,6 +36,8 @@ For more commands click /help...
 HELP_STRINGS = """
 
 Hello! my name *{}*.
+you just follow my group for movies @VAKERMEDIA
+@VAKERMEDIA_ALL , @VAKERMEDIA_THRILLER
 
 *Main* available commands:
  - /start: Start the bot...
@@ -47,7 +51,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
-DONATE_STRING = """hey i dont want any donation from you.!!! just follow my channel for latest movies -@fcfilmcorner."""
+DONATE_STRING = """hey i dont want any donation from you.!!! just follow my channel for latest movies -@VAKERMEDIA."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -368,7 +372,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 342136008 and DONATION_LINK:
+        if OWNER_ID != 642892679 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
